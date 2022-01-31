@@ -4,8 +4,8 @@ import colors from '../../constants/colors';
 const styles = StyleSheet.create({
   backgroundImage: {
     width: '100%',
-    height: '85%',
     resizeMode: 'cover',
+    height: 600,
   },
   backgroundContent: {
     width: '100%',
@@ -49,6 +49,14 @@ const styles = StyleSheet.create({
   searchIcon: {
     marginRight: 5,
     color: colors.primary,
+  },
+  postList: {
+    marginTop: 20,
+  },
+  postListTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginHorizontal: 20,
   },
 });
 
