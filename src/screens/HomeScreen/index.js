@@ -8,6 +8,8 @@ const HomeScreen = () => {
   const navigation = useNavigation();
 
   const goToSearchScreen = () => navigation.navigate('SearchScreen');
+  const goToPostListScreen = () =>
+    navigation.navigate('PostListScreen', {title: 'Nearby stays'});
 
   return (
     <View>
@@ -20,9 +22,7 @@ const HomeScreen = () => {
         style={styles.backgroundImage}>
         <View style={styles.backgroundContent}>
           <Text style={styles.contentTitle}>Go Near</Text>
-          <Pressable
-            onPress={() => console.log('clicked')}
-            style={styles.contentButton}>
+          <Pressable onPress={goToPostListScreen} style={styles.contentButton}>
             <Text style={styles.buttonText}>Explore nearby stays</Text>
           </Pressable>
         </View>

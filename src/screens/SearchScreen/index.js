@@ -15,7 +15,7 @@ const SearchScreen = () => {
   }, []);
 
   const goToResults = location =>
-    navigation.navigate('SearchResultsScreen', {location});
+    navigation.navigate('PostListScreen', {title: location});
 
   return (
     <View style={styles.container}>

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   iconWrapper: {
-    backgroundColor: colors.grey,
+    backgroundColor: colors.lightGrey,
     borderWidth: 1,
     borderColor: colors.primary,
     borderRadius: 10,
