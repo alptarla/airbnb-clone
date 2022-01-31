@@ -2,6 +2,7 @@ import React from 'react';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro';
+import Octicons from 'react-native-vector-icons/Octicons';
 
 export const SearchIcon = ({size, style}) => (
   <EvilIcons name="search" size={size} style={style} />
@@ -17,4 +18,7 @@ export const MessageIcon = ({size, style}) => (
 );
 export const ProfileIcon = ({size, style}) => (
   <EvilIcons name="user" size={size} style={style} />
+);
+export const LocationIcon = ({size, style}) => (
+  <Octicons name="location" size={size} style={style} />
 );

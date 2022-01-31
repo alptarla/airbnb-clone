@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
   topButton: {
     position: 'absolute',
     top: 60,
+    zIndex: 100,
     width: Dimensions.get('screen').width - 40,
     height: 50,
     marginHorizontal: 20,
