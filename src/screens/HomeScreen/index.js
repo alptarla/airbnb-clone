@@ -1,6 +1,6 @@
 import React from 'react';
 import {ImageBackground, Pressable, Text, View} from 'react-native';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import {SearchIcon} from '../../icons';
 import styles from './styles';
 
 const HomeScreen = () => {
@@ -10,7 +10,7 @@ const HomeScreen = () => {
         source={require('../../../assets/images/wallpaper.jpg')}
         style={styles.backgroundImage}>
         <Pressable onPress={() => {}} style={styles.topButton}>
-          <EvilIcons size={24} name="search" style={styles.searchIcon} />
+          <SearchIcon style={styles.searchIcon} size={28} />
           <Text style={styles.buttonText}>Where are you going?</Text>
         </Pressable>
         <View style={styles.backgroundContent}>
