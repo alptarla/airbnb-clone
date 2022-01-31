@@ -17,6 +17,8 @@ const SearchScreen = () => {
   const goToResults = location =>
     navigation.navigate('PostListScreen', {title: location});
 
+  console.log('GOOGLE_API_KEY', GOOGLE_API_KEY);
+
   return (
     <View style={styles.container}>
       <GooglePlacesAutocomplete
