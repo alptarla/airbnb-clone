@@ -22,7 +22,11 @@ const Router = () => {
           component={PostListScreen}
           options={({route}) => ({title: route.params.title})}
         />
-        <Stack.Screen name="SearchScreen" component={SearchScreen} />
+        <Stack.Screen
+          name="SearchScreen"
+          component={SearchScreen}
+          options={{title: 'Search'}}
+        />
         <Stack.Screen
           name="MapScreen"
           component={MapScreen}

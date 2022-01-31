@@ -145,7 +145,6 @@
 				6FAD254FF1A0EEF984D53F43 /* Pods-AirbnbClone-AirbnbCloneTests.debug.xcconfig */,
 				FFFF227CC6994FD1E6108F11 /* Pods-AirbnbClone-AirbnbCloneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -485,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T88LJBV3B;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AirbnbClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T88LJBV3B;
 				INFOPLIST_FILE = AirbnbClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
