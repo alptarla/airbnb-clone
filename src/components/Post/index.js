@@ -1,10 +1,10 @@
 import React from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Pressable, Text} from 'react-native';
 import styles from './styles';
 
-const Post = ({place}) => {
+const Post = ({place, onPress}) => {
   return (
-    <View style={styles.container}>
+    <Pressable onPress={onPress} style={styles.container}>
       <Image source={{uri: place.image}} style={styles.image} />
       <Text style={styles.bedroomsText}>
         {`${place.bed} bed - ${place.bedroom} bedroom`}
@@ -17,7 +17,7 @@ const Post = ({place}) => {
         <Text style={styles.newPrice}> ${place.newPrice} </Text> / night
       </Text>
       <Text style={styles.totalPrice}>${place.totalPrice} total</Text>
-    </View>
+    </Pressable>
   );
 };
 

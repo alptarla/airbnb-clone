@@ -1,15 +1,25 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList} from 'react-native';
 import places from '../../../assets/data/feed';
 import Post from '../../components/Post';
 
 const PostListScreen = () => {
+  const navigation = useNavigation();
+
+  const goToMapScreen = (coordinate, title) =>
+    navigation.navigate('MapScreen', {coordinate, title});
+
   return (
     <FlatList
-      style={{height: '100%'}}
       data={places}
       keyExtractor={item => item.id}
-      renderItem={({item}) => <Post place={item} />}
+      renderItem={({item}) => (
+        <Post
+          place={item}
+          onPress={() => goToMapScreen(item.coordinate, item.title)}
+        />
+      )}
     />
   );
 };
