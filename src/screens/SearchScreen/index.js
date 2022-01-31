@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {useEffect, useRef} from 'react';
 import {View} from 'react-native';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
@@ -7,20 +8,21 @@ import styles from './styles';
 
 const SearchScreen = () => {
   const placesRef = useRef(null);
+  const navigation = useNavigation();
 
   useEffect(() => {
     placesRef?.current?.focus();
   }, []);
+
+  const goToResults = location =>
+    navigation.navigate('SearchResultsScreen', {location});
 
   return (
     <View style={styles.container}>
       <GooglePlacesAutocomplete
         placeholder="Search places..."
         ref={placesRef}
-        onPress={(data, details = null) => {
-          // 'details' is provided when fetchDetails = true
-          console.log(data, details);
-        }}
+        onPress={({description}) => goToResults(description)}
         query={{
           key: GOOGLE_API_KEY,
           language: 'en',
