@@ -10,4 +10,3 @@
 - React Native
 - Google Places API
 - React Native Maps
-- React Native Vector Icons
